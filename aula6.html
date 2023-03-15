@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ptbr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>engrenagem brasil</title>
+
+        <style>
+            body
+            {
+             width: 100%;
+             height: 100vh;   
+             display: flex;
+             flex-direction: column;
+             justify-content: center;
+             justify-items: center;
+             align-items: center;
+             align-content:center;
+             margin: 0px;
+             background-color:black;
+            }
+            .conteudo
+            {
+                width: 950px;
+                height: 630px;
+                background-color: rgb(255, 60, 11);
+                position:relative;
+            }
+            .E2
+            {
+                position: absolute;
+                animation: gira2 10s infinite linear;
+                top: 120px;
+                left: 450px;
+            
+            }
+            @keyframes gira2  {
+                0%    {  rotate: 0deg;}
+                100%  {  rotate: -360deg;}
+            }
+
+            .E1
+            {
+                position: absolute;
+                animation: gira2 10s infinite linear;
+                top: 0px;
+                left: 0px;
+            
+            }
+            @keyframes gira1 {
+                0%  {  rotate: 0deg;}
+                100%  { rotate: +360deg;}
+            }
+             </style>
+    
+
+        
+</head>
+<body>
+    <div class="conteudo">
+     <img src ="engrenagem.png.png" class="E1">
+     <img src ="engrenagem.png.png" class="E2"> 
+    </div>
+    </body>
+</html>
